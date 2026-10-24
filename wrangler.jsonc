@@ -2,8 +2,11 @@
   // Must match the Worker name in the Cloudflare dashboard for Git deploys to succeed.
   "name": "tegankwebsite",
   "compatibility_date": "2026-10-01",
+  "main": "src/worker.js",
   "assets": {
     "directory": "./public",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/pv.js", "/pv"]
   }
 }

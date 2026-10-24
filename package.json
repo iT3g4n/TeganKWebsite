@@ -8,6 +8,6 @@
     "dev": "npx wrangler dev",
     "deploy": "npx wrangler deploy",
     "test": "node --test",
-    "coverage": "node --test --experimental-test-coverage --test-coverage-include=public/js/lib/** --test-coverage-lines=80 --test-coverage-branches=80 --test-coverage-functions=80"
+    "coverage": "node --test --experimental-test-coverage --test-coverage-include=public/js/lib/** --test-coverage-include=src/** --test-coverage-lines=80 --test-coverage-branches=80 --test-coverage-functions=80"
   }
 }
