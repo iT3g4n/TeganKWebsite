@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.536 50" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Tegan Kierznowski</title>
+  <style>
+    .ink { fill: #240046; }
+    .line { fill: #9d4edd; }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #f5eeff; }
+      .line { fill: #c77dff; }
+    }
+  </style>
+  <path class="ink" d="M0 0 45 0 45 10 27.5 10 27.5 22.136 17.5 32.136 17.5 10 0 10ZM17.5 44.864 27.5 34.864 27.5 50 17.5 50ZM36.5 25.864 42 31.364 53.464 19.899 53.464 10 67.607 10 49.071 28.536 70.536 50 56.393 50 34.379 27.985Z"/>
+  <path class="line" d="M17.5 34.964 36.5 15.964 42 21.464 51.464 12 51.464 19.071 42 28.536 36.5 23.036 17.5 42.036ZM63.464 0 70.536 0 62.536 8 55.464 8Z"/>
+</svg>

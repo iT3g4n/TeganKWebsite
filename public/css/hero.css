@@ -11,22 +11,19 @@
 }
 
 .brand {
-  --tone: var(--on-accent);
+  --tone: var(--brand);
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  color: var(--accent);
+  color: var(--ink);
   font-weight: 750;
   font-stretch: 112%;
   text-decoration: none;
 }
 
 .brand .icon {
-  font-size: 2.4rem;
-}
-
-.brand-name {
-  color: var(--ink);
+  width: 1.4107em;
+  font-size: 2rem;
 }
 
 .nav {

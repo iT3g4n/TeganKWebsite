@@ -30,4 +30,5 @@ Everything lives in `public/index.html`.
 - **Career chart.** Each `<li>` in the story section (`#story-list`) is one candle. `data-ohlc="open high low close"` sets its shape, `data-label` its axis label, `data-note` an optional handwritten note, and `data-kind="next"` the faded "next" candle.
 - **Projects.** The `.projects` list. Swap the "Private repo" badge for a `View code` link when a repo goes public.
 - **Icons.** All icons are hand-drawn SVG `<symbol>`s at the top of `<body>`. Shapes are filled, never stroked. Parts with `style="fill:var(--tone)"` take the lighter second colour.
+- **Logo.** The same two paths appear in `public/logo.svg`, `public/favicon.svg` and the `#i-logo` symbol, so change all three together. Every diagonal is 45° and every gap is 2 units.
 - **Colours.** `public/css/tokens.css`. Each token uses `light-dark(light, dark)`, so both themes are defined in one place.
