@@ -1,0 +1,100 @@
+.exams {
+  display: grid;
+  gap: 40px;
+}
+
+.exam-group h3 {
+  margin-bottom: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.exam-list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.exam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 60px;
+  padding: 10px 20px;
+  border-radius: var(--r-block);
+  background: var(--surface);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.exam-score {
+  display: inline-flex;
+  flex: none;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--accent);
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-detail {
+  display: block;
+  margin-top: 2px;
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.exam-focus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.exam-focus .icon {
+  font-size: 0.75em;
+}
+
+.academics-summary {
+  margin-bottom: 40px;
+}
+
+.exam-note {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+  font-weight: 600;
+  font-stretch: 100%;
+}
+
+.exam-group--predicted .exam {
+  padding-inline: 0 20px;
+  background: none;
+  color: var(--ink-soft);
+}
+
+.exam-group--predicted .exam-score {
+  color: var(--ink-soft);
+}
+
+@media (min-width: 820px) {
+  .exams,
+  .academics-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 56px;
+  }
+
+  .academics-summary {
+    margin-bottom: 48px;
+  }
+
+  .exam-group--predicted .exam {
+    padding-inline: 20px;
+  }
+}
