@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { STORAGE_KEY, resolveTheme, oppositeTheme } from '../js/lib/theme.js';
+import { STORAGE_KEY, resolveTheme, oppositeTheme } from '../public/js/lib/theme.js';
 
 test('a saved choice wins over the system preference', () => {
   assert.equal(resolveTheme('light', true), 'light');

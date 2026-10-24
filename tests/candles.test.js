@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseOhlc, buildCandles, gridLines } from '../js/lib/candles.js';
+import { parseOhlc, buildCandles, gridLines } from '../public/js/lib/candles.js';
 
 const LAYOUT = { width: 200, height: 120, padX: 10, padTop: 10, padBottom: 10 };
 
