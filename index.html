@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tegan Kierznowski</title>
+  <meta name="description" content="Tegan Kierznowski is a software developer and aspiring quant, shipping code since age 12. Open to quant and software engineering internships.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#140926" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Tegan Kierznowski">
+  <meta property="og:description" content="Software developer, future quant. Open to quant and software engineering internships.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%237b2cbf'/%3E%3Cg fill='%23fff'%3E%3Crect x='5' y='8' width='11.5' height='3.4' rx='.6'/%3E%3Crect x='9.05' y='8' width='3.4' height='16' rx='.6'/%3E%3Crect x='18' y='8' width='3.4' height='16' rx='.6'/%3E%3Cpolygon points='20.6,15.6 25.4,8 29.2,8 23,17.8'/%3E%3Cpolygon points='22.4,15.2 29.4,24 25.4,24 20.6,18'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Shantell+Sans:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/chart.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    try {
+      const saved = localStorage.getItem('tk-theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+    } catch (error) {
+      console.warn('Saved theme unavailable, following the system setting.', error);
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="9"/>
+      <g style="fill:var(--tone)">
+        <rect x="5" y="8" width="11.5" height="3.4" rx=".6"/>
+        <rect x="9.05" y="8" width="3.4" height="16" rx=".6"/>
+        <rect x="18" y="8" width="3.4" height="16" rx=".6"/>
+        <polygon points="20.6,15.6 25.4,8 29.2,8 23,17.8"/>
+        <polygon points="22.4,15.2 29.4,24 25.4,24 20.6,18"/>
+      </g>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4.6"/>
+      <g style="fill:var(--tone)">
+        <rect x="11" y="1.2" width="2" height="4" rx="1"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(45 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(90 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(135 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(180 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(225 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(270 12 12)"/>
+        <rect x="11" y="1.2" width="2" height="4" rx="1" transform="rotate(315 12 12)"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M19.46 13.84A8.5 8.5 0 1 1 10.16 4.54A7 7 0 0 0 19.46 13.84Z"/>
+      <path style="fill:var(--tone)" d="M18.6 2Q18.6 4.4 21 4.4 18.6 4.4 18.6 6.8 18.6 4.4 16.2 4.4 18.6 4.4 18.6 2Z"/>
+    </symbol>
+    <symbol id="i-up" viewBox="0 0 24 24">
+      <path d="M10.3 4.1a2 2 0 0 1 3.4 0l7.6 13a2 2 0 0 1-1.7 3H4.4a2 2 0 0 1-1.7-3Z"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path d="M4.3 9.8 4.9 2.6l5.3 3.8Z"/>
+      <path d="M19.7 9.8 19.1 2.6l-5.3 3.8Z"/>
+      <path fill-rule="evenodd" d="M3.5 13.6a8.5 7.6 0 1 0 17 0a8.5 7.6 0 1 0-17 0Z M7.8 13.3a1.3 1.8 0 1 0 2.6 0a1.3 1.8 0 1 0-2.6 0Z M13.6 13.3a1.3 1.8 0 1 0 2.6 0a1.3 1.8 0 1 0-2.6 0Z M10.9 16.6h2.2L12 17.9Z"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M5 2h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Z M5.6 7.3a1.6 1.6 0 1 0 3.2 0a1.6 1.6 0 1 0-3.2 0Z M5.8 10h2.8v8H5.8Z M10.6 10H13.3V11.3C14 10.3 15 9.7 16.4 9.7 18.6 9.7 19.6 11.1 19.6 13.6V18H16.9V14C16.9 12.8 16.4 12.1 15.4 12.1 14.3 12.1 13.3 12.8 13.3 14V18H10.6Z"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 2.2 20 5.3v5.9c0 5.1-3.3 8.9-8 10.6-4.7-1.7-8-5.5-8-10.6V5.3Z"/>
+      <g style="fill:var(--tone)">
+        <circle cx="12" cy="10.2" r="2.4"/>
+        <path d="M10.9 11.4h2.2l.8 4.8h-3.8Z"/>
+      </g>
+    </symbol>
+    <symbol id="i-robot" viewBox="0 0 24 24">
+      <rect x="11.2" y="2.8" width="1.6" height="3.6" rx=".8"/>
+      <g style="fill:var(--tone)">
+        <circle cx="12" cy="2.6" r="1.6"/>
+        <rect x="1.8" y="10" width="2.6" height="4.4" rx="1.1"/>
+        <rect x="19.6" y="10" width="2.6" height="4.4" rx="1.1"/>
+      </g>
+      <rect x="4" y="6" width="16" height="12.4" rx="4"/>
+      <rect x="8" y="19.2" width="8" height="2.6" rx="1.2"/>
+      <g style="fill:var(--tone)">
+        <circle cx="9" cy="11.6" r="1.9"/>
+        <circle cx="15" cy="11.6" r="1.9"/>
+        <rect x="9" y="14.8" width="6" height="1.7" rx=".85"/>
+      </g>
+    </symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24">
+      <g style="fill:var(--tone)">
+        <path d="M10.6 9.2 2.8 13.7v2.2l7.8-2.4Z"/>
+        <path d="M13.4 9.2l7.8 4.5v2.2l-7.8-2.4Z"/>
+      </g>
+      <path d="M12 1.8c1 0 1.6 1.1 1.6 2.6v13.5l2.4 1.8v1.4L12 20.1 8 21.1v-1.4l2.4-1.8V4.4c0-1.5.6-2.6 1.6-2.6Z"/>
+    </symbol>
+    <symbol id="i-banana" viewBox="0 0 24 24">
+      <g transform="translate(.4 .4)">
+        <path d="M3.2 16.2C7 22.5 18.5 21 20 6.2L16.8 5.6C15.4 10.4 9.8 13.6 3.2 16.2Z"/>
+        <g style="fill:var(--tone)">
+          <path d="M17.4 6.1 17.9 2.6a.9.9 0 0 1 1-.8l.9.1a.9.9 0 0 1 .8 1L19.9 6.3Z"/>
+          <circle cx="3.4" cy="16.3" r="1.1"/>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="i-candles" viewBox="0 0 24 24">
+      <g style="fill:var(--tone)">
+        <rect x="5.2" y="6" width="1.6" height="13" rx=".8"/>
+        <rect x="3.5" y="9" width="5" height="7" rx="1.2"/>
+      </g>
+      <rect x="11.2" y="2" width="1.6" height="15" rx=".8"/>
+      <rect x="9.5" y="4.5" width="5" height="9.5" rx="1.2"/>
+      <rect x="17.7" y="7.5" width="1.6" height="14" rx=".8"/>
+      <rect x="16" y="10" width="5" height="8.5" rx="1.2"/>
+    </symbol>
+    <symbol id="i-crystal" viewBox="0 0 24 24">
+      <circle cx="12" cy="10" r="7.6"/>
+      <g style="fill:var(--tone)">
+        <path d="M9.2 4.8Q9.2 7.6 12 7.6 9.2 7.6 9.2 10.4 9.2 7.6 6.4 7.6 9.2 7.6 9.2 4.8Z"/>
+        <path d="M6.4 17.2h11.2l1.4 2.4H5Z"/>
+        <rect x="4" y="19.6" width="16" height="2.6" rx="1.3"/>
+      </g>
+    </symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M3 4.6V11a1.6 1.6 0 0 0 .5 1.1l8.6 8.6a1.6 1.6 0 0 0 2.3 0l6.3-6.3a1.6 1.6 0 0 0 0-2.3L12.1 3.5A1.6 1.6 0 0 0 11 3H4.6A1.6 1.6 0 0 0 3 4.6Z M6 7.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0-3 0Z"/>
+      <path style="fill:var(--tone)" d="m13.6 9.4 3.2 4.1h-6.4Z"/>
+    </symbol>
+    <symbol id="i-block" viewBox="0 0 24 24">
+      <path d="M3 7.2 12 12v9.6l-9-4.8Z"/>
+      <path style="opacity:.7" d="M21 7.2 12 12v9.6l9-4.8Z"/>
+      <g style="fill:var(--tone)">
+        <path d="M12 2.4 21 7.2 12 12 3 7.2Z"/>
+        <path d="M3 7.2 12 12v2.2l-1.6-.9v1.4l-1.8-1V12.2L6 10.8v1.5l-1.6-.9V9.8L3 9Z"/>
+        <path d="M21 7.2 12 12v2.2l1.6-.9v1.4l1.8-1V12.2l2.6-1.4v1.5l1.6-.9V9.8L21 9Z"/>
+      </g>
+    </symbol>
+    <symbol id="i-controller" viewBox="0 0 24 24">
+      <path d="M7 7h10c2.8 0 4.5 2.1 5 5.2l.8 4.6c.3 2-1.6 3.4-3.3 2.4l-3.3-2.2H7.8l-3.3 2.2c-1.7 1-3.6-.4-3.3-2.4L2 12.2C2.5 9.1 4.2 7 7 7Z"/>
+      <g style="fill:var(--tone)">
+        <rect x="6.2" y="9.9" width="1.8" height="5.2" rx=".5"/>
+        <rect x="4.5" y="11.6" width="5.2" height="1.8" rx=".5"/>
+        <circle cx="16.4" cy="11.2" r="1.2"/>
+        <circle cx="18.6" cy="13.4" r="1.2"/>
+      </g>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24">
+      <path d="M7.5 10.5V8a4.5 4.5 0 0 1 9 0v2.5h-2.6V8a1.9 1.9 0 0 0-3.8 0v2.5Z"/>
+      <rect x="4.5" y="10" width="15" height="11.5" rx="3"/>
+      <g style="fill:var(--tone)">
+        <circle cx="12" cy="14.6" r="1.7"/>
+        <rect x="11.1" y="15" width="1.8" height="3.6" rx=".9"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Tegan Kierznowski, back to top">
+        <svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span class="brand-name">Tegan K.</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav-extra" href="#work">Work</a>
+        <a class="nav-extra" href="#story">Story</a>
+        <a class="nav-extra" href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <span class="visually-hidden">Dark mode</span>
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" id="top" aria-labelledby="hero-name">
+      <h1 class="hero-name" id="hero-name"><span>Tegan</span> <span>Kierznowski</span></h1>
+
+      <div class="hero-grid">
+        <div class="hero-intro">
+          <p class="hero-lede">Software developer, future quant.</p>
+          <p class="hero-text">I've been shipping code since I was 12, starting with a Discord bot because Fortnite got boring. Now I build VPN infrastructure, trading backtests and the occasional banana-based unit converter. I'm looking for a quant or software engineering internship.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-quiet" href="https://github.com/iT3g4n">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+              View my GitHub
+            </a>
+          </div>
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to internships</p>
+        </div>
+
+        <figure class="chart-panel" aria-labelledby="chart-caption">
+          <div class="chart-head">
+            <div>
+              <p class="ticker">TEGN</p>
+              <p class="ticker-name">Tegan Kierznowski, Inc.</p>
+              <p class="ticker-move">
+                <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+                Up and to the right since 2020
+              </p>
+            </div>
+            <p class="stamp">Analyst rating: strong hire</p>
+          </div>
+          <div class="chart-frame" data-chart>
+            <svg class="chart-svg" role="group" aria-label="Career chart, 2020 to now. Each candle links to its entry in the story section."></svg>
+            <div class="chart-tip" aria-hidden="true" hidden></div>
+          </div>
+          <figcaption class="chart-foot" id="chart-caption">Past performance is a pretty good indicator of future results. Select a candle to read that part of the story.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <h2 class="section-title" id="work-title">Things I've built</h2>
+        <p class="section-intro">Some have users, some were built to learn. Public ones link to the code, and I'm happy to walk through the private ones.</p>
+      </div>
+
+      <article class="flagship">
+        <div>
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <h3 class="flagship-title">A VPN that works on networks that block VPNs</h3>
+          <p class="flagship-text">A desktop client for Windows, macOS and Linux that tunnels WireGuard through censorship-resistant transports, so to a firewall the connection looks like ordinary HTTPS. I built the app, the servers it connects to, and the website, accounts and payments around it.</p>
+        </div>
+        <div>
+          <ul class="flagship-points">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Electron app with a Go networking core</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Dockerized server fleet running WireGuard and obfuscated proxies</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>React and Express site with PostgreSQL accounts and payments</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Release builds for three operating systems, in eight languages</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>1,200+ commits across the client, servers and site</li>
+          </ul>
+          <p class="flagship-note">My biggest project by a long way. Ask me about the architecture.</p>
+        </div>
+      </article>
+
+      <ul class="projects">
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-robot"/></svg></span>
+          <div>
+            <h3>Guildster</h3>
+            <p class="project-kind">Discord bot, 2020</p>
+            <p class="project-text">My first real project, started at 12: 50+ commands for moderation, music, giveaways and auto-mod, with per-server settings in MongoDB. My README back then estimated 3,875,982,756,239,845 commits. It was closer to 400.</p>
+            <p class="project-meta">
+              <span class="project-stack">JavaScript, Node.js, MongoDB</span>
+              <a class="project-link" href="https://github.com/iT3g4n/Guildster">View code</a>
+            </p>
+          </div>
+        </li>
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-candles"/></svg></span>
+          <div>
+            <h3>Strategy backtester</h3>
+            <p class="project-kind">Quant research, 2025</p>
+            <p class="project-text">Tests moving-average strategies against historical prices: crossovers, touches, and price holding above the average. The README says "I don't know what I am doing." I know more now.</p>
+            <p class="project-meta">
+              <span class="project-stack">Python</span>
+              <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
+            </p>
+          </div>
+        </li>
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-crystal"/></svg></span>
+          <div>
+            <h3>Prediction-market bot</h3>
+            <p class="project-kind">Trading prototype, 2026</p>
+            <p class="project-text">An early proof of concept that pulls live Polymarket markets from their API, as groundwork for testing short-term trading strategies on NBA markets.</p>
+            <p class="project-meta">
+              <span class="project-stack">TypeScript, Polymarket API</span>
+              <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
+            </p>
+          </div>
+        </li>
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-plane"/></svg></span>
+          <div>
+            <h3>LocalChat</h3>
+            <p class="project-kind">Offline chat app, 2023</p>
+            <p class="project-text">A chat room that needs no internet. One laptop runs a hotspot and a Node server, and everyone else connects to it. Built so my friends and I could talk on a flight with no Wi-Fi.</p>
+            <p class="project-meta">
+              <span class="project-stack">JavaScript, Node.js</span>
+              <a class="project-link" href="https://github.com/iT3g4n/LocalChat">View code</a>
+            </p>
+          </div>
+        </li>
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-tag"/></svg></span>
+          <div>
+            <h3>Stock lookup API</h3>
+            <p class="project-kind">Backend, 2025</p>
+            <p class="project-text">Send it a ticker and it returns the company's full name, current price and a few other details. Small, focused, and the start of my market-data tooling.</p>
+            <p class="project-meta">
+              <span class="project-stack">JavaScript, Node.js</span>
+              <a class="project-link" href="https://github.com/iT3g4n/StockGetterBackend">View code</a>
+            </p>
+          </div>
+        </li>
+        <li class="project">
+          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-banana"/></svg></span>
+          <div>
+            <h3>Height converter</h3>
+            <p class="project-kind">School project, 2026</p>
+            <p class="project-text">How many bananas tall is the Eiffel Tower? Compare any two objects, from atoms to mountains, on a blueprint-style diagram. My CSA final project, with unit tests in Vitest.</p>
+            <p class="project-meta">
+              <span class="project-stack">React, TypeScript, Vitest</span>
+              <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section wrap story-layout" id="story" aria-labelledby="story-title">
+      <div class="section-head">
+        <h2 class="section-title" id="story-title">How I got here</h2>
+        <p class="section-intro">The chart at the top of the page, in words. Every candle is one of these.</p>
+      </div>
+
+      <ol class="story-list" id="story-list">
+        <li class="story-item" id="story-2020" tabindex="-1" data-ohlc="6 22 3 20" data-label="2020" data-note="age 12">
+          <div class="story-when"><span class="story-year">2020</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Built a Discord bot</h3>
+            <p>Guildster started with YouTube tutorials and the discord.js guide. I learned JavaScript because I needed it.</p>
+          </div>
+        </li>
+        <li class="story-item" id="story-2021" tabindex="-1" data-ohlc="20 36 18 34" data-label="2021">
+          <div class="story-when"><span class="story-year">2021</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Grew it to 50+ commands</h3>
+            <p>Added MongoDB, music, moderation, giveaways and a website. Version 5.2 by the end of the year.</p>
+          </div>
+        </li>
+        <li class="story-item story-item--down" id="story-2021-site" tabindex="-1" data-ohlc="34 36 23 26" data-note="oops">
+          <div class="story-when"><span class="story-year">2021</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Started a website I never finished</h3>
+            <p>The repo description reads "terrible code for a website I'm working on that I'll probably never finish." It was accurate.</p>
+          </div>
+        </li>
+        <li class="story-item" id="story-2023" tabindex="-1" data-ohlc="26 44 24 41" data-label="2023">
+          <div class="story-when"><span class="story-year">2023</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Made a chat app for planes</h3>
+            <p>LocalChat let my friends and me message each other mid-flight with no internet at all.</p>
+          </div>
+        </li>
+        <li class="story-item" id="story-2024" tabindex="-1" data-ohlc="41 52 38 49" data-label="2024">
+          <div class="story-when"><span class="story-year">2024</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Finished a website, finally</h3>
+            <p>Built the site for the Minecraft server I host. Small, and actually done.</p>
+          </div>
+        </li>
+        <li class="story-item" id="story-2025" tabindex="-1" data-ohlc="49 66 46 63" data-label="2025">
+          <div class="story-when"><span class="story-year">2025</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Got serious about quant</h3>
+            <p>Started backtesting strategies in Python, built a stock lookup API, and picked up R for data analysis.</p>
+          </div>
+        </li>
+        <li class="story-item" id="story-2026" tabindex="-1" data-ohlc="63 92 60 88" data-label="2026">
+          <div class="story-when"><span class="story-year">2026</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>Shipped a censorship-resistant VPN</h3>
+            <p>Desktop app, servers, website and payments, all mine. The biggest jump on the chart.</p>
+          </div>
+        </li>
+        <li class="story-item story-item--next" id="story-next" tabindex="-1" data-ohlc="88 99 85 97" data-label="Next" data-note="your team here?" data-kind="next">
+          <div class="story-when"><span class="story-year">Next</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div>
+            <h3>An internship with you?</h3>
+            <p>I'm looking for a quant or software engineering internship. If you're hiring, <a href="#contact">let's talk</a>.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <h2 class="section-title" id="skills-title">What I work with</h2>
+        <p class="section-intro">Sorted by honesty.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-group skill-group--daily">
+          <h3>Every day</h3>
+          <ul class="chips">
+            <li class="chip">JavaScript</li>
+            <li class="chip">TypeScript</li>
+            <li class="chip">Node.js</li>
+            <li class="chip">React</li>
+            <li class="chip">Git</li>
+          </ul>
+        </div>
+        <div class="skill-group skill-group--shipped">
+          <h3>Have shipped with</h3>
+          <ul class="chips">
+            <li class="chip">Go</li>
+            <li class="chip">Electron</li>
+            <li class="chip">Express</li>
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">MongoDB</li>
+            <li class="chip">Docker</li>
+            <li class="chip">Nginx</li>
+            <li class="chip">WireGuard</li>
+            <li class="chip">Vite</li>
+            <li class="chip">Tailwind</li>
+          </ul>
+        </div>
+        <div class="skill-group skill-group--learning">
+          <h3>Learning now</h3>
+          <ul class="chips">
+            <li class="chip">Python for data analysis</li>
+            <li class="chip">R</li>
+            <li class="chip">Quantitative finance</li>
+            <li class="chip">Backtesting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="fun" aria-labelledby="fun-title">
+      <div class="section-head">
+        <h2 class="section-title" id="fun-title">Off the clock</h2>
+      </div>
+      <ul class="facts">
+        <li class="fact">
+          <svg class="icon" aria-hidden="true"><use href="#i-crystal"/></svg>
+          <p>I build trading bots, and I still can't tell you where the market is going. Nobody honest can.</p>
+        </li>
+        <li class="fact">
+          <svg class="icon" aria-hidden="true"><use href="#i-banana"/></svg>
+          <p>The Eiffel Tower is about 1,833 bananas tall. I built a tool to find that out and I stand by the methodology.</p>
+        </li>
+        <li class="fact">
+          <svg class="icon" aria-hidden="true"><use href="#i-block"/></svg>
+          <p>I run a Minecraft server, which makes me a part-time sysadmin for people who mostly want diamonds.</p>
+        </li>
+        <li class="fact">
+          <svg class="icon" aria-hidden="true"><use href="#i-controller"/></svg>
+          <p>Yes, I still play games. No, not Fortnite. It knows what it did.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <h2 class="contact-title" id="contact-title">Let's talk.</h2>
+        <p class="contact-text">Hiring a quant or software engineering intern? I'd love to hear about the role. LinkedIn is the fastest way to reach me.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/withtk">
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            Message me on LinkedIn
+          </a>
+          <a class="btn btn-quiet" href="https://github.com/iT3g4n">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            Browse my GitHub
+          </a>
+        </div>
+        <svg class="icon contact-art" aria-hidden="true"><use href="#i-candles"/></svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Tegan Kierznowski</p>
+      <p>Built from scratch, icons included.</p>
+    </div>
+  </footer>
+</body>
+</html>

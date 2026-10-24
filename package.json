@@ -1,0 +1,12 @@
+{
+  "name": "tegank-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal site for Tegan Kierznowski.",
+  "scripts": {
+    "dev": "npx --yes serve@14.2.4 .",
+    "test": "node --test",
+    "coverage": "node --test --experimental-test-coverage --test-coverage-include=js/lib/** --test-coverage-lines=80 --test-coverage-branches=80 --test-coverage-functions=80"
+  }
+}
