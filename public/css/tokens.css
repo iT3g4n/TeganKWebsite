@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --c-white: #ffffff;
   --c-paper-dark: #131116;
@@ -61,10 +61,6 @@
   --max: 1200px;
   --space-section: clamp(64px, 9vw, 120px);
   --r-control: 2px;
-}
-
-:root[data-theme='light'] {
-  color-scheme: light;
 }
 
 :root[data-theme='dark'] {

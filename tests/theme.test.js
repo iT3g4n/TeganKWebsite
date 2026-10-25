@@ -1,20 +1,24 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { STORAGE_KEY, resolveTheme, oppositeTheme } from '../public/js/lib/theme.js';
+import { STORAGE_KEY, DEFAULT_THEME, resolveTheme, oppositeTheme } from '../public/js/lib/theme.js';
 
-test('a saved choice wins over the system preference', () => {
-  assert.equal(resolveTheme('light', true), 'light');
-  assert.equal(resolveTheme('dark', false), 'dark');
+test('the site defaults to light mode', () => {
+  assert.equal(DEFAULT_THEME, 'light');
 });
 
-test('without a saved choice the system preference decides', () => {
-  assert.equal(resolveTheme(null, true), 'dark');
-  assert.equal(resolveTheme(undefined, false), 'light');
+test('a saved choice wins over the default', () => {
+  assert.equal(resolveTheme('light'), 'light');
+  assert.equal(resolveTheme('dark'), 'dark');
 });
 
-test('unknown saved values are ignored', () => {
-  assert.equal(resolveTheme('purple', true), 'dark');
-  assert.equal(resolveTheme('', false), 'light');
+test('without a saved choice the default theme is used', () => {
+  assert.equal(resolveTheme(null), DEFAULT_THEME);
+  assert.equal(resolveTheme(undefined), DEFAULT_THEME);
+});
+
+test('unknown saved values fall back to the default', () => {
+  assert.equal(resolveTheme('purple'), DEFAULT_THEME);
+  assert.equal(resolveTheme(''), DEFAULT_THEME);
 });
 
 test('oppositeTheme flips between light and dark', () => {

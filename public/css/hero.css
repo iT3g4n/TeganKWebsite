@@ -83,16 +83,6 @@
   display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .theme-toggle .icon-moon {
-    display: none;
-  }
-
-  :root:not([data-theme='light']) .theme-toggle .icon-sun {
-    display: block;
-  }
-}
-
 @media (max-width: 680px) {
   .nav .nav-extra {
     display: none;

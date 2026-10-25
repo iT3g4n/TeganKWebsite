@@ -4,5 +4,5 @@ try {
   const saved = localStorage.getItem('tk-theme');
   if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
 } catch (error) {
-  console.warn('Saved theme unavailable, following the system setting.', error);
+  console.warn('Saved theme unavailable, using the default light theme.', error);
 }

@@ -13,9 +13,8 @@ function saveTheme(theme) {
 /** @param {HTMLButtonElement} button */
 export function initThemeToggle(button) {
   const root = document.documentElement;
-  const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
   const themeColors = document.querySelectorAll('meta[name="theme-color"]');
-  const currentTheme = () => resolveTheme(root.dataset.theme, systemDark.matches);
+  const currentTheme = () => resolveTheme(root.dataset.theme);
 
   const sync = () => {
     const theme = currentTheme();
@@ -29,6 +28,5 @@ export function initThemeToggle(button) {
     saveTheme(next);
     sync();
   });
-  systemDark.addEventListener('change', sync);
   sync();
 }
