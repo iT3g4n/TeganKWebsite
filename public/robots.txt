@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tegank.org/sitemap.xml

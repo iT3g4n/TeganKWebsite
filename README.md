@@ -42,3 +42,4 @@ Everything lives in `public/index.html`.
 - **Icons.** All icons are hand-drawn SVG `<symbol>`s at the top of `<body>`. Shapes are filled, never stroked. Parts with `style="fill:var(--tone)"` take the lighter second colour.
 - **Logo.** The same two paths appear in `public/logo.svg`, `public/favicon.svg` and the `#i-logo` symbol, so change all three together. Every diagonal is 45° and every gap is 2 units.
 - **Colours.** `public/css/tokens.css`. Each token uses `light-dark(light, dark)`, so both themes are defined in one place.
+- **Search and sharing.** The `<head>` holds the title, description, canonical URL, Open Graph tags and a JSON-LD `ProfilePage`. Keep its `sameAs` links in step with the profile links on the page. `public/og.png` is the 1200×630 link preview, so redo it if the name or headline changes. `npm test` checks all of this, plus `robots.txt` and `sitemap.xml`.
