@@ -1,0 +1,108 @@
+.life-body {
+  display: grid;
+  gap: var(--s-8);
+}
+
+.life-list {
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--rule-strong);
+}
+
+.life-item {
+  display: grid;
+  gap: var(--s-2);
+  padding: var(--s-4) var(--s-3);
+  border-bottom: 1px solid var(--rule);
+  scroll-margin: 120px;
+  transition: background-color 0.12s ease;
+}
+
+.life-item:target {
+  background: var(--hover);
+}
+
+.life-item:focus {
+  outline: none;
+}
+
+.life-when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-1) var(--s-3);
+}
+
+.life-mark {
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 1.375rem;
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 1.1;
+}
+
+.life-place {
+  color: var(--ink-soft);
+}
+
+.life-text {
+  max-width: 60ch;
+  font-size: 1.0625rem;
+}
+
+@media (min-width: 640px) {
+  .life-item {
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: var(--s-4);
+  }
+
+  .life-when {
+    display: grid;
+    align-content: start;
+    gap: var(--s-1);
+  }
+}
+
+/* What I believe */
+.belief-list {
+  display: grid;
+  padding: 0;
+  list-style: none;
+}
+
+.belief {
+  display: grid;
+  align-content: start;
+  gap: var(--s-2);
+  padding-block: var(--s-4);
+  border-bottom: 1px solid var(--rule);
+}
+
+.belief-title {
+  font-size: var(--step-1);
+  line-height: 1.25;
+}
+
+.belief p {
+  max-width: 52ch;
+  color: var(--ink-soft);
+  font-size: 1.0625rem;
+}
+
+.belief-source {
+  justify-self: start;
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.belief-source:hover {
+  color: var(--accent-hover);
+}
+
+@media (min-width: 720px) {
+  .belief-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--s-7);
+  }
+}

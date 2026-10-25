@@ -26,6 +26,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 ol,
 ul,
@@ -35,7 +36,8 @@ figure {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: var(--w-heading);
   text-wrap: balance;
 }
