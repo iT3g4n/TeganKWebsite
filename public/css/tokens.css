@@ -2,67 +2,65 @@
   color-scheme: light dark;
 
   --c-white: #ffffff;
-  --c-lilac-100: #f4ebff;
-  --c-lilac-200: #e9d8ff;
-  --c-lilac-300: #e0aaff;
-  --c-violet-400: #c77dff;
-  --c-violet-500: #9d4edd;
-  --c-violet-600: #7b2cbf;
-  --c-violet-700: #5a189a;
-  --c-violet-900: #240046;
-  --c-night-950: #140926;
-  --c-night-900: #20113a;
-  --c-night-800: #2c1a4f;
+  --c-paper-dark: #131116;
+  --c-violet: #7b2cbf;
+  --c-violet-deep: #5a189a;
+  --c-violet-light: #b98cf0;
+  --c-violet-pale: #d9c2f7;
 
-  --bg: light-dark(var(--c-white), var(--c-night-950));
-  --ink: light-dark(var(--c-violet-900), #f5eeff);
-  --ink-soft: light-dark(#5d4b7a, #c4b5de);
-  --surface: light-dark(var(--c-lilac-100), var(--c-night-900));
-  --surface-strong: light-dark(var(--c-lilac-200), var(--c-night-800));
-  --accent: light-dark(var(--c-violet-600), var(--c-violet-400));
-  --accent-hover: light-dark(var(--c-violet-700), var(--c-lilac-300));
-  --on-accent: light-dark(var(--c-white), #1d0838);
-  --brand: light-dark(var(--c-violet-500), var(--c-violet-400));
-  --focus: light-dark(var(--c-violet-500), var(--c-lilac-300));
+  --bg: light-dark(var(--c-white), var(--c-paper-dark));
+  --ink: light-dark(#18141f, #ece9f1);
+  --ink-soft: light-dark(#5f5a68, #a29dab);
+  --rule: light-dark(#e5e2ea, #2a2630);
+  --rule-strong: var(--ink);
+  --hover: light-dark(#f6f4f8, #1c1a21);
+  --accent: light-dark(var(--c-violet), var(--c-violet-light));
+  --accent-hover: light-dark(var(--c-violet-deep), var(--c-violet-pale));
+  --on-accent: light-dark(var(--c-white), var(--c-paper-dark));
+  --brand: var(--accent);
+  --focus: var(--accent);
+  --tone: light-dark(var(--c-violet-pale), #5b3a86);
 
-  --icon: light-dark(var(--c-violet-600), var(--c-violet-400));
-  --tone: light-dark(var(--c-lilac-300), #6a3fa6);
-  --tile: var(--c-violet-600);
-  --tile-icon: var(--c-white);
-  --tile-tone: var(--c-lilac-300);
+  --grid: light-dark(#eeebf1, #221f27);
+  --candle-up: var(--accent);
+  --candle-down: light-dark(#85808f, #6e6977);
+  --candle-hot: var(--ink);
+  --tip-bg: var(--ink);
+  --tip-ink: var(--bg);
 
-  --grid: light-dark(#ece1fa, #26163f);
-  --candle-up: light-dark(var(--c-violet-500), var(--c-violet-400));
-  --candle-down: #7d6a99;
-  --candle-next: light-dark(#e6d5fb, #33215a);
-  --candle-hot: light-dark(var(--c-violet-700), var(--c-lilac-300));
-  --tip-bg: light-dark(var(--c-violet-900), #f5eeff);
-  --tip-ink: light-dark(var(--c-white), var(--c-violet-900));
+  --band-bg: light-dark(var(--c-violet), #2e1b4a);
+  --band-ink: var(--c-white);
+  --band-soft: light-dark(#eadcfb, #cbbbe2);
 
-  --contact-bg: light-dark(var(--c-violet-700), var(--c-violet-600));
-  --contact-ink: var(--c-white);
-  --contact-soft: light-dark(#e8d9ff, #f1e6ff);
-  --contact-quiet: light-dark(#6c25b4, #8d42d1);
-  --contact-btn-ink: light-dark(var(--c-violet-700), var(--c-violet-600));
-
-  --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --font-hand: 'Shantell Sans', 'Comic Sans MS', cursive;
+  --font-text: 'Besley', 'Rockwell', Georgia, serif;
+  --font-ui: 'Martian Mono', ui-monospace, Menlo, Consolas, monospace;
+  --w-display: 500;
+  --w-heading: 600;
+  --track-display: -0.02em;
+  --track-heading: -0.015em;
+  --stretch-display: 100%;
 
   --step--1: 0.875rem;
-  --step-0: 1.125rem;
-  --step-1: 1.3125rem;
-  --step-2: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
-  --step-3: clamp(2.25rem, 1.5rem + 2.8vw, 3.5rem);
-  --step-hero: clamp(2.75rem, 0.6rem + 8.6vw, 6.75rem);
+  --step-0: 1.1875rem;
+  --step-1: 1.375rem;
+  --step-2: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --step-3: clamp(2.25rem, 1.6rem + 2.4vw, 3.25rem);
+  --step-hero: clamp(2.75rem, 0.6rem + 10.5vw, 9rem);
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
 
   --gutter: clamp(16px, 4vw, 48px);
-  --max: 1160px;
-  --space-section: clamp(80px, 11vw, 148px);
-
-  --r-panel: 28px;
-  --r-block: 18px;
-  --r-tile: 14px;
-  --r-pill: 999px;
+  --max: 1200px;
+  --space-section: clamp(64px, 9vw, 120px);
+  --r-control: 2px;
 }
 
 :root[data-theme='light'] {

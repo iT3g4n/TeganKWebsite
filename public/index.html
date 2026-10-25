@@ -7,7 +7,7 @@
   <meta name="description" content="Tegan Kierznowski is a software developer and aspiring quant, coding since age 12. Senior at TASIS England, open to quant and SWE internships.">
   <link rel="canonical" href="https://tegank.org/">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#140926" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#131116" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Tegan Kierznowski">
   <meta property="og:description" content="Software developer, future quant. Open to quant and software engineering internships.">
   <meta property="og:type" content="profile">
@@ -23,13 +23,14 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Shantell+Sans:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..800;1,400..800&family=Martian+Mono:wdth,wght@75..112.5,400..800&display=swap">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/chart.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/academics.css">
+  <link rel="stylesheet" href="css/contact.css">
   <script src="js/theme-init.js"></script>
   <script type="module" src="js/main.js"></script>
   <script defer src="/pv.js" data-website-id="b4a73059-653b-478a-a644-65446019fca2"></script>
@@ -158,13 +159,14 @@
         <path d="M21 7.2 12 12v2.2l1.6-.9v1.4l1.8-1V12.2l2.6-1.4v1.5l1.6-.9V9.8L21 9Z"/>
       </g>
     </symbol>
-    <symbol id="i-controller" viewBox="0 0 24 24">
-      <path d="M7 7h10c2.8 0 4.5 2.1 5 5.2l.8 4.6c.3 2-1.6 3.4-3.3 2.4l-3.3-2.2H7.8l-3.3 2.2c-1.7 1-3.6-.4-3.3-2.4L2 12.2C2.5 9.1 4.2 7 7 7Z"/>
-      <g style="fill:var(--tone)">
-        <rect x="6.2" y="9.9" width="1.8" height="5.2" rx=".5"/>
-        <rect x="4.5" y="11.6" width="5.2" height="1.8" rx=".5"/>
-        <circle cx="16.4" cy="11.2" r="1.2"/>
-        <circle cx="18.6" cy="13.4" r="1.2"/>
+    <symbol id="i-volleyball" viewBox="0 0 24 24">
+      <clipPath id="i-volleyball-ball"><circle cx="12" cy="12" r="10"/></clipPath>
+      <circle cx="12" cy="12" r="10"/>
+      <g style="fill:var(--tone)" clip-path="url(#i-volleyball-ball)">
+        <path id="i-volleyball-seam" d="M12.8 12A8.8 8.8 0 0 0 3.23 3.23L3.37 4.83A7.2 7.2 0 0 1 11.2 12ZM9.08 9.63A5.6 5.6 0 0 0 2.55 6.59L2.91 7.94A4.2 4.2 0 0 1 7.81 10.23Z"/>
+        <use href="#i-volleyball-seam" transform="rotate(120 12 12)"/>
+        <use href="#i-volleyball-seam" transform="rotate(240 12 12)"/>
+        <circle cx="12" cy="12" r="1.1"/>
       </g>
     </symbol>
     <symbol id="i-lock" viewBox="0 0 24 24">
@@ -207,28 +209,28 @@
       <div class="hero-grid">
         <div class="hero-intro">
           <p class="hero-lede">Software developer, future quant.</p>
-          <p class="hero-text">I've been shipping code since I was 12, starting with a Discord bot because Fortnite got boring. Now I build VPN infrastructure, trading backtests and the occasional banana-based unit converter. I'm a 17-year-old senior at TASIS England, looking for a quant or software engineering internship.</p>
+          <p class="hero-text">I started coding at 12, writing a Discord bot because Fortnite got boring. These days I build VPN infrastructure and backtest trading strategies. I'm 17, a senior at TASIS England, and I'm looking for a quant or software engineering internship.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Get in touch</a>
-            <a class="btn btn-quiet" href="https://github.com/iT3g4n" target="_blank" rel="noopener">
+            <a class="btn btn-primary" href="#contact">Contact me</a>
+            <a class="btn" href="https://github.com/iT3g4n" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
-              View my GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+              GitHub<span class="visually-hidden"> (opens in a new tab)</span>
             </a>
           </div>
-          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to internships</p>
+          <p class="status label"><span class="status-dot" aria-hidden="true"></span>Open to internships</p>
         </div>
 
         <figure class="chart-panel" aria-labelledby="chart-caption">
           <div class="chart-head">
             <div>
               <p class="ticker">TEGN</p>
-              <p class="ticker-name">Tegan Kierznowski, Inc.</p>
-              <p class="ticker-move">
+              <p class="ticker-name label">Tegan Kierznowski, Inc.</p>
+              <p class="ticker-move label">
                 <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
                 Up and to the right since 2020
               </p>
             </div>
-            <p class="stamp">Analyst rating: strong hire</p>
+            <p class="stamp label">Analyst rating: <span class="stamp-value">strong hire</span></p>
           </div>
           <div class="chart-frame" data-chart>
             <svg class="chart-svg" role="group" aria-label="Career chart, 2020 to now. Each candle links to its entry in the story section."></svg>
@@ -242,22 +244,20 @@
     <section class="section wrap" id="work" aria-labelledby="work-title">
       <div class="section-head">
         <h2 class="section-title" id="work-title">Things I've built</h2>
-        <p class="section-intro">Some have users, some were built to learn. Public ones link to the code, and I'm happy to walk through the private ones.</p>
+        <p class="section-intro">Some of these have real users and some I built to learn. Public repos are linked, and I'm happy to walk you through the private ones.</p>
       </div>
 
+      <div class="work-body">
       <article class="flagship">
-        <div>
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
-          <h3 class="flagship-title">A VPN that works on networks that block VPNs</h3>
-          <p class="flagship-text">A desktop client for Windows, macOS and Linux that tunnels WireGuard through censorship-resistant transports, so to a firewall the connection looks like ordinary HTTPS. I built the app, the servers it connects to, and the website, accounts and payments around it.</p>
-        </div>
+        <h3 class="flagship-title"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>A VPN that works on networks that block VPNs</h3>
+        <p class="flagship-text">A desktop client for Windows, macOS and Linux that tunnels WireGuard through censorship-resistant transports, so to a firewall the connection looks like ordinary HTTPS. I built all of it: the app, the servers it connects to, and the site where people sign up and pay.</p>
         <div>
           <ul class="flagship-points">
-            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Electron app with a Go networking core</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Dockerized server fleet running WireGuard and obfuscated proxies</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>React and Express site with PostgreSQL accounts and payments</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Release builds for three operating systems, in eight languages</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>1,200+ commits across the client, servers and site</li>
+            <li>Electron app with a Go networking core</li>
+            <li>Dockerized server fleet running WireGuard and obfuscated proxies</li>
+            <li>React and Express site with PostgreSQL accounts and payments</li>
+            <li>Release builds for three operating systems, in eight languages</li>
+            <li>1,200+ commits across the client, servers and site</li>
           </ul>
           <p class="flagship-note">My biggest project by a long way. Ask me about the architecture.</p>
         </div>
@@ -265,96 +265,103 @@
 
       <ul class="projects">
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-robot"/></svg></span>
           <div>
-            <h3>Guildster</h3>
-            <p class="project-kind">Discord bot, 2020</p>
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-robot"/></svg>Guildster</h3>
+            <p class="project-kind label">Discord bot, 2020</p>
+          </div>
+          <div>
             <p class="project-text">My first real project, started at 12: 50+ commands for moderation, music, giveaways and auto-mod, with per-server settings in MongoDB. My README back then estimated 3,875,982,756,239,845 commits. It was closer to 400.</p>
-            <p class="project-meta">
+            <p class="project-meta label">
               <span class="project-stack">JavaScript, Node.js, MongoDB</span>
               <a class="project-link" href="https://github.com/iT3g4n/Guildster" target="_blank" rel="noopener">View code<span class="visually-hidden"> (opens in a new tab)</span></a>
             </p>
           </div>
         </li>
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-candles"/></svg></span>
           <div>
-            <h3>Strategy backtester</h3>
-            <p class="project-kind">Quant research, 2025</p>
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-candles"/></svg>Strategy backtester</h3>
+            <p class="project-kind label">Quant research, 2025</p>
+          </div>
+          <div>
             <p class="project-text">Tests moving-average strategies against historical prices: crossovers, touches, and price holding above the average. The README says "I don't know what I am doing." I know more now.</p>
-            <p class="project-meta">
+            <p class="project-meta label">
               <span class="project-stack">Python</span>
               <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
             </p>
           </div>
         </li>
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-crystal"/></svg></span>
           <div>
-            <h3>Prediction-market bot</h3>
-            <p class="project-kind">Trading prototype, 2026</p>
-            <p class="project-text">An early proof of concept that pulls live Polymarket markets from their API, as groundwork for testing short-term trading strategies on NBA markets.</p>
-            <p class="project-meta">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-crystal"/></svg>Prediction-market bot</h3>
+            <p class="project-kind label">Trading prototype, 2026</p>
+          </div>
+          <div>
+            <p class="project-text">An early proof of concept. It pulls live markets from the Polymarket API, and the plan is to use it to test short-term trading strategies on NBA markets.</p>
+            <p class="project-meta label">
               <span class="project-stack">TypeScript, Polymarket API</span>
               <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
             </p>
           </div>
         </li>
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-plane"/></svg></span>
           <div>
-            <h3>LocalChat</h3>
-            <p class="project-kind">Offline chat app, 2023</p>
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-plane"/></svg>LocalChat</h3>
+            <p class="project-kind label">Offline chat app, 2023</p>
+          </div>
+          <div>
             <p class="project-text">A chat room that needs no internet. One laptop runs a hotspot and a Node server, and everyone else connects to it. Built so my friends and I could talk on a flight with no Wi-Fi.</p>
-            <p class="project-meta">
+            <p class="project-meta label">
               <span class="project-stack">JavaScript, Node.js</span>
               <a class="project-link" href="https://github.com/iT3g4n/LocalChat" target="_blank" rel="noopener">View code<span class="visually-hidden"> (opens in a new tab)</span></a>
             </p>
           </div>
         </li>
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-tag"/></svg></span>
           <div>
-            <h3>Stock lookup API</h3>
-            <p class="project-kind">Backend, 2025</p>
-            <p class="project-text">Send it a ticker and it returns the company's full name, current price and a few other details. Small, focused, and the start of my market-data tooling.</p>
-            <p class="project-meta">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg>Stock lookup API</h3>
+            <p class="project-kind label">Backend, 2025</p>
+          </div>
+          <div>
+            <p class="project-text">Send it a ticker and it returns the company's full name, current price and a few other details. It's the first piece of market-data tooling I wrote.</p>
+            <p class="project-meta label">
               <span class="project-stack">JavaScript, Node.js</span>
               <a class="project-link" href="https://github.com/iT3g4n/StockGetterBackend" target="_blank" rel="noopener">View code<span class="visually-hidden"> (opens in a new tab)</span></a>
             </p>
           </div>
         </li>
         <li class="project">
-          <span class="tile" aria-hidden="true"><svg class="icon"><use href="#i-banana"/></svg></span>
           <div>
-            <h3>Height converter</h3>
-            <p class="project-kind">School project, 2026</p>
-            <p class="project-text">How many bananas tall is the Eiffel Tower? Compare any two objects, from atoms to mountains, on a blueprint-style diagram. My CSA final project, with unit tests in Vitest.</p>
-            <p class="project-meta">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-banana"/></svg>Height converter</h3>
+            <p class="project-kind label">School project, 2026</p>
+          </div>
+          <div>
+            <p class="project-text">Pick any two objects, from atoms to mountains, and it compares their heights on a blueprint-style diagram. My CSA final project, with unit tests in Vitest.</p>
+            <p class="project-meta label">
               <span class="project-stack">React, TypeScript, Vitest</span>
               <span class="project-private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private repo</span>
             </p>
           </div>
         </li>
       </ul>
+      </div>
     </section>
 
-    <section class="section wrap story-layout" id="story" aria-labelledby="story-title">
+    <section class="section wrap" id="story" aria-labelledby="story-title">
       <div class="section-head">
         <h2 class="section-title" id="story-title">How I got here</h2>
-        <p class="section-intro">The chart at the top of the page, in words. Every candle is one of these.</p>
+        <p class="section-intro">The chart at the top of the page, written out. Each candle is one of these entries.</p>
       </div>
 
       <ol class="story-list" id="story-list">
         <li class="story-item" id="story-2020" tabindex="-1" data-ohlc="6 22 3 20" data-label="2020" data-note="age 12">
-          <div class="story-when"><span class="story-year">2020</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2020</span></div>
           <div>
             <h3>Built a Discord bot</h3>
             <p>Guildster started with YouTube tutorials and the discord.js guide. I learned JavaScript because I needed it.</p>
           </div>
         </li>
         <li class="story-item" id="story-2021" tabindex="-1" data-ohlc="20 36 18 34" data-label="2021">
-          <div class="story-when"><span class="story-year">2021</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2021</span></div>
           <div>
             <h3>Grew it to 50+ commands</h3>
             <p>Added MongoDB, music, moderation, giveaways and a website. Version 5.2 by the end of the year.</p>
@@ -364,42 +371,42 @@
           <div class="story-when"><span class="story-year">2021</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
           <div>
             <h3>Started a website I never finished</h3>
-            <p>The repo description reads "terrible code for a website I'm working on that I'll probably never finish." It was accurate.</p>
+            <p>The repo description: "terrible code for a website I'm working on that I'll probably never finish."</p>
           </div>
         </li>
         <li class="story-item" id="story-2023" tabindex="-1" data-ohlc="26 44 24 41" data-label="2023">
-          <div class="story-when"><span class="story-year">2023</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2023</span></div>
           <div>
             <h3>Made a chat app for planes</h3>
             <p>LocalChat let my friends and me message each other mid-flight with no internet at all.</p>
           </div>
         </li>
         <li class="story-item" id="story-2024" tabindex="-1" data-ohlc="41 52 38 49" data-label="2024">
-          <div class="story-when"><span class="story-year">2024</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2024</span></div>
           <div>
             <h3>Finished a website, finally</h3>
-            <p>Built the site for the Minecraft server I host. Small, and actually done.</p>
+            <p>Built the site for the Minecraft server I host, and this time I finished it.</p>
           </div>
         </li>
         <li class="story-item" id="story-2025" tabindex="-1" data-ohlc="49 66 46 63" data-label="2025">
-          <div class="story-when"><span class="story-year">2025</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2025</span></div>
           <div>
             <h3>Got serious about quant</h3>
             <p>Started backtesting strategies in Python, built a stock lookup API, and picked up R for data analysis.</p>
           </div>
         </li>
         <li class="story-item" id="story-2026" tabindex="-1" data-ohlc="63 92 60 88" data-label="2026">
-          <div class="story-when"><span class="story-year">2026</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">2026</span></div>
           <div>
             <h3>Shipped a censorship-resistant VPN</h3>
-            <p>Desktop app, servers, website and payments, all mine. The biggest jump on the chart.</p>
+            <p>I built the desktop app, the servers, the website and the payments myself. It's the tallest candle on the chart.</p>
           </div>
         </li>
         <li class="story-item story-item--next" id="story-next" tabindex="-1" data-ohlc="88 99 85 97" data-label="Next" data-note="your team here?" data-kind="next">
-          <div class="story-when"><span class="story-year">Next</span><svg class="icon story-dir" aria-hidden="true"><use href="#i-up"/></svg></div>
+          <div class="story-when"><span class="story-year">Next</span></div>
           <div>
             <h3>An internship with you?</h3>
-            <p>I'm looking for a quant or software engineering internship. If you're hiring, <a href="#contact">let's talk</a>.</p>
+            <p>Quant or software engineering, ideally. If your team is hiring, <a href="#contact">let's talk</a>.</p>
           </div>
         </li>
       </ol>
@@ -410,13 +417,21 @@
         <h2 class="section-title" id="academics-title">Academics</h2>
         <p class="section-intro">I'm a senior at TASIS England, an American school in Surrey just outside London, graduating in 2027. Four AP exams down, four more in May.</p>
       </div>
-      <ul class="exam-list academics-summary">
-        <li class="exam"><span>Current GPA</span><span class="exam-score">3.7</span></li>
-        <li class="exam"><span>SAT superscore<span class="exam-detail"><strong class="exam-focus"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>690 Math</strong>, 730 Reading and Writing</span></span><span class="exam-score">1420</span></li>
+      <div class="academics-body">
+      <ul class="academics-summary">
+        <li class="key-figure">
+          <span class="label">Current GPA</span>
+          <span class="key-figure-value">3.7</span>
+        </li>
+        <li class="key-figure">
+          <span class="label">SAT superscore</span>
+          <span class="key-figure-value">1420</span>
+          <span class="key-figure-detail label"><strong class="key-figure-focus"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>690 Math</strong>, 730 Reading and Writing</span>
+        </li>
       </ul>
       <div class="exams">
         <div class="exam-group">
-          <h3>AP exams taken</h3>
+          <h3 class="table-head">AP exams taken</h3>
           <ul class="exam-list">
             <li class="exam"><span>AP Calculus AB</span><span class="exam-score"><span class="visually-hidden">Score: </span>5</span></li>
             <li class="exam"><span>AP Computer Science A</span><span class="exam-score"><span class="visually-hidden">Score: </span>5</span></li>
@@ -425,7 +440,7 @@
           </ul>
         </div>
         <div class="exam-group exam-group--predicted">
-          <h3>Taking now</h3>
+          <h3 class="table-head">Taking now</h3>
           <ul class="exam-list">
             <li class="exam"><span>AP Calculus BC</span><span class="exam-score"><span class="exam-note">predicted</span>5</span></li>
             <li class="exam"><span>AP Statistics</span><span class="exam-score"><span class="exam-note">predicted</span>5</span></li>
@@ -434,90 +449,90 @@
           </ul>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="section wrap" id="skills" aria-labelledby="skills-title">
       <div class="section-head">
         <h2 class="section-title" id="skills-title">What I work with</h2>
-        <p class="section-intro">Sorted by honesty.</p>
+        <p class="section-intro">Grouped by how much I've actually used them.</p>
       </div>
       <div class="skills">
         <div class="skill-group skill-group--daily">
-          <h3>Every day</h3>
-          <ul class="chips">
-            <li class="chip">JavaScript</li>
-            <li class="chip">TypeScript</li>
-            <li class="chip">Node.js</li>
-            <li class="chip">React</li>
-            <li class="chip">Git</li>
+          <h3 class="table-head">Every day</h3>
+          <ul class="skill-list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Git</li>
           </ul>
         </div>
         <div class="skill-group skill-group--shipped">
-          <h3>Have shipped with</h3>
-          <ul class="chips">
-            <li class="chip">Go</li>
-            <li class="chip">Electron</li>
-            <li class="chip">Express</li>
-            <li class="chip">PostgreSQL</li>
-            <li class="chip">MongoDB</li>
-            <li class="chip">Docker</li>
-            <li class="chip">Nginx</li>
-            <li class="chip">WireGuard</li>
-            <li class="chip">Vite</li>
-            <li class="chip">Tailwind</li>
+          <h3 class="table-head">Have shipped with</h3>
+          <ul class="skill-list">
+            <li>Go</li>
+            <li>Electron</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Docker</li>
+            <li>Nginx</li>
+            <li>WireGuard</li>
+            <li>Vite</li>
+            <li>Tailwind</li>
           </ul>
         </div>
         <div class="skill-group skill-group--learning">
-          <h3>Learning now</h3>
-          <ul class="chips">
-            <li class="chip">Python for data analysis</li>
-            <li class="chip">R</li>
-            <li class="chip">Quantitative finance</li>
-            <li class="chip">Backtesting</li>
+          <h3 class="table-head">Learning now</h3>
+          <ul class="skill-list">
+            <li>Python for data analysis</li>
+            <li>R</li>
+            <li>Quantitative finance</li>
+            <li>Backtesting</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section wrap" id="fun" aria-labelledby="fun-title">
+    <section class="section section--briefs wrap" id="fun" aria-labelledby="fun-title">
       <div class="section-head">
         <h2 class="section-title" id="fun-title">Off the clock</h2>
       </div>
       <ul class="facts">
         <li class="fact">
           <svg class="icon" aria-hidden="true"><use href="#i-crystal"/></svg>
-          <p>I build trading bots, and I still can't tell you where the market is going. Nobody honest can.</p>
+          <p><strong class="fact-lead">I build trading bots,</strong> and I still couldn't tell you where the market is going tomorrow.</p>
         </li>
         <li class="fact">
           <svg class="icon" aria-hidden="true"><use href="#i-banana"/></svg>
-          <p>The Eiffel Tower is about 1,833 bananas tall. I built a tool to find that out and I stand by the methodology.</p>
+          <p><strong class="fact-lead">The Eiffel Tower is about 1,833 bananas tall.</strong> I built a tool to find that out and I stand by the methodology.</p>
         </li>
         <li class="fact">
           <svg class="icon" aria-hidden="true"><use href="#i-block"/></svg>
-          <p>I run a Minecraft server, which makes me a part-time sysadmin for people who mostly want diamonds.</p>
+          <p><strong class="fact-lead">I run a Minecraft server,</strong> which makes me a part-time sysadmin for people who mostly want diamonds.</p>
         </li>
         <li class="fact">
-          <svg class="icon" aria-hidden="true"><use href="#i-controller"/></svg>
-          <p>Yes, I still play games. No, not Fortnite. It knows what it did.</p>
+          <svg class="icon" aria-hidden="true"><use href="#i-volleyball"/></svg>
+          <p><strong class="fact-lead">I play volleyball</strong> as a middle blocker and outside hitter, which means a lot of jumping.</p>
         </li>
       </ul>
     </section>
 
-    <section class="wrap" id="contact" aria-labelledby="contact-title">
-      <div class="contact">
-        <h2 class="contact-title" id="contact-title">Let's talk.</h2>
-        <p class="contact-text">Hiring a quant or software engineering intern? I'd love to hear about the role. LinkedIn is the fastest way to reach me.</p>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="contact-title" id="contact-title">Hiring?</h2>
+        <p class="contact-text">LinkedIn is the fastest way to reach me. Tell me about the role and what your team works on.</p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/withtk" target="_blank" rel="noopener">
             <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
             Message me on LinkedIn<span class="visually-hidden"> (opens in a new tab)</span>
           </a>
-          <a class="btn btn-quiet" href="https://github.com/iT3g4n" target="_blank" rel="noopener">
+          <a class="btn" href="https://github.com/iT3g4n" target="_blank" rel="noopener">
             <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
-            Browse my GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+            GitHub<span class="visually-hidden"> (opens in a new tab)</span>
           </a>
         </div>
-        <svg class="icon contact-art" aria-hidden="true"><use href="#i-candles"/></svg>
       </div>
     </section>
   </main>

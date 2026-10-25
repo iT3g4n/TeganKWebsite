@@ -1,6 +1,6 @@
 import { STORAGE_KEY, resolveTheme, oppositeTheme } from './lib/theme.js';
 
-const THEME_COLORS = Object.freeze({ light: '#ffffff', dark: '#140926' });
+const THEME_COLORS = Object.freeze({ light: '#ffffff', dark: '#131116' });
 
 function saveTheme(theme) {
   try {

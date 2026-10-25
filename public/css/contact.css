@@ -1,0 +1,159 @@
+/* Off the clock: the one section that breaks the margin-title rhythm */
+.section--briefs {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-5);
+}
+
+.section--briefs .section-head {
+  position: static;
+}
+
+.facts {
+  display: grid;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule);
+}
+
+.fact {
+  display: grid;
+  align-content: start;
+  gap: var(--s-4);
+  padding-block: var(--s-5);
+}
+
+.fact + .fact {
+  border-top: 1px solid var(--rule);
+}
+
+.fact .icon {
+  color: var(--accent);
+  font-size: 3rem;
+}
+
+.fact p {
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.fact-lead {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fact {
+    padding-inline: var(--s-5);
+  }
+
+  .fact:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .fact:nth-child(even) {
+    border-left: 1px solid var(--rule);
+  }
+
+  .fact + .fact {
+    border-top: 0;
+  }
+
+  .fact:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
+  }
+}
+
+@media (min-width: 1100px) {
+  .facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .fact:nth-child(n) {
+    padding-left: var(--s-5);
+    border-top: 0;
+    border-left: 1px solid var(--rule);
+  }
+
+  .fact:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+/* Contact */
+.contact {
+  margin-top: var(--space-section);
+  padding-block: clamp(56px, 9vw, 120px);
+  background: var(--band-bg);
+  color: var(--band-ink);
+}
+
+.contact-title {
+  margin-left: -0.04em;
+  font-size: clamp(3.5rem, 1rem + 9vw, 8rem);
+  font-weight: var(--w-display);
+  font-stretch: var(--stretch-display);
+  line-height: 0.9;
+  letter-spacing: var(--track-display);
+  padding-bottom: 0.14em;
+}
+
+.contact-text {
+  max-width: 40ch;
+  margin-top: var(--s-5);
+  color: var(--band-soft);
+  font-size: var(--step-1);
+  line-height: 1.45;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  margin-top: var(--s-6);
+}
+
+.contact .btn {
+  border-color: var(--band-soft);
+  color: var(--band-ink);
+}
+
+.contact .btn:hover {
+  background: rgb(255 255 255 / 0.12);
+}
+
+.contact .btn-primary {
+  --tone: var(--c-violet-pale);
+  border-color: var(--c-white);
+  background: var(--c-white);
+  color: var(--c-violet-deep);
+}
+
+.contact .btn-primary:hover {
+  background: var(--c-violet-pale);
+}
+
+.contact :focus-visible {
+  outline-color: var(--c-white);
+}
+
+/* Footer */
+.site-footer {
+  padding-block: var(--s-5) var(--s-7);
+  color: var(--ink-soft);
+  font-family: var(--font-ui);
+  font-stretch: 87.5%;
+  font-size: var(--step--1);
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-2) var(--s-5);
+}
