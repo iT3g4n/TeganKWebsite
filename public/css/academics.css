@@ -100,6 +100,13 @@
   color: var(--ink-soft);
 }
 
+.exam-score.award-issuer {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+  font-weight: 600;
+  font-stretch: 87.5%;
+}
+
 @media (min-width: 620px) {
   .academics-summary,
   .exams {
